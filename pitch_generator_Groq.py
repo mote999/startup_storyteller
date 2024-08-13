@@ -12,14 +12,14 @@ st.title("Startup Storyteller")
 # create a description for the app
 
 st.write("This app will generate personalized storytelling on your painpoint and will create an elevator pitch for your value proposition. For more information, please contact Dries Faems, https://www.linkedin.com/in/dries-faems-0371569/")
-st.write("To use this application, you need a GROQ API key. You can get a free API key by signing up at https://groq.com/ and create free API key at https://console.groq.com/keys")
+
 
 
 # ask user to input the initial prompt
 
 
 
-groq_api_key = st.text_input('Enter your GROQ API key.', type = "password")
+groq_api_key = st.secrets["GROQ_API_KEY"]
 
 
 painpoint = st.text_input('Enter the painpoint that your startup is trying to solve')
