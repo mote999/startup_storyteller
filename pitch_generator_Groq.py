@@ -19,7 +19,7 @@ st.write("This app will generate personalized storytelling on your painpoint and
 
 
 
-groq_api_key = st.secrets["GROQ_API_KEY"]
+groq_api_key = st.text_input("Please provide your Groq API key. If you do not have a Groq API key, please got to https://console.groq.com/playground", type="password")
 
 
 painpoint = st.text_input('Enter the painpoint that your startup is trying to solve')
